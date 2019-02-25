@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use URL;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +13,6 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    use URL;
     public function boot()
     {
         //
