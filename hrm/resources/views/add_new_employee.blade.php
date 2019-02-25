@@ -82,27 +82,20 @@
           <div class="form-group has-info">
                     <label class="col-xs-12 col-sm-3 control-label no-padding-right" for="form-field-1"> Tôn giáo</label>
                     <div class="col-xs-12 col-sm-8">
-                      <?php
-                        $tg=DB::table('ton_giao')->get();
-                        ?>
-               <select name="ton_giao" id="ton_giao" class="width-100">
-                          @foreach($tg as $tg)
-                                <option value="{{$tg->TEN_TG}}" @if(old('ton_giao') == $tg->TEN_TG) selected @endif>{{$tg->TEN_TG}}</option>
-                           @endforeach
-                              </select>
+                      
+               <input id="birthplace"  name="ton_giao" placeholder="" class="width-100" type="text" value="{{ old('ton_giao') }}">
+                      @if($errors->has('ton_giao'))
+                      <p style="color:red">{{$errors->first('ton_giao')}}</p>
+                          @endif
                     </div>
                   </div>
-          <div class="form-group has-info">
-                    <label class="col-xs-12 col-sm-3 control-label no-padding-right" for="form-field-1"> Dân tộc</label>
+         <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Tôn giáo</label>
                     <div class="col-xs-12 col-sm-8">
-                       <?php
-                        $dt=DB::table('dan_toc')->get();
-                        ?>
-               <select name="dan_toc" id="dan_toc" class="width-100">
-                          @foreach($dt as $dt)
-                                <option value="{{$dt->TEN_DT}}" @if(old('dan_toc') == $dt->TEN_DT) selected @endif>{{$dt->TEN_DT}}</option>
-                           @endforeach
-                              </select>
+                      <input name="dan_toc" placeholder="" class="width-100" type="text" value="{{old('dan_toc')}}">
+                      @if($errors->has('dan_toc'))
+                      <p style="color:red">{{$errors->first('dan_toc')}}</p>
+                          @endif
                     </div>
                   </div>
                      <div class="form-group has-info">

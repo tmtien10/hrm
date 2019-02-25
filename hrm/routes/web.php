@@ -91,7 +91,7 @@ Route::post('getluong','SalaryController@get_salary');
 Route::get('getslip/{STT}','SalaryController@get_payslip');
 Route::get('delslip/{STT}','SalaryController@del_payslip');
 
-Route::get('getslip/pdf/{STT}','SalaryController@print_pdf');
+Route::get('pdf/{STT}','SalaryController@print_pdf');
 
 Route::get('dstk/','AccController@get_Acc');
 Route::post('addtk','AccController@add_acc');

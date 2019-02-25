@@ -211,4 +211,6 @@ class SalaryController extends Controller
    	   	$pdf = PDF::loadView('pdfview',  compact('THONG_TIN_PHIEU'));
     		return $pdf->download('luong.pdf');
    }
+
+   
 }

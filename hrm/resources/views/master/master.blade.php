@@ -3,7 +3,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta charset="utf-8">
 		<title>Bảng điều khiển</title>
-
+		<base href="{{asset('')}}">
 		<meta name="description" content="Common form elements and layouts">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		@yield('script')
@@ -155,7 +155,7 @@
 
 						<ul class="submenu nav-hide" style="display: none;">
 							<li class="">
-								<a href="http://localhost:81/hrm/dsnv">
+								<a href="dsnv">
 									<i class="menu-icon fa fa-caret-right"></i>
 									<span class="menu-text">
 									Danh sách
@@ -165,7 +165,7 @@
 								
 									</li>
 							<li class="">
-								<a href="http://localhost:81/hrm/addnv">
+								<a href="addnv">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Thêm mới
 								</a>
@@ -174,7 +174,7 @@
 							</li>	
 								
 								<li class="">
-								<a href="http://localhost:81/hrm/dspb">
+								<a href="dspb">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Phòng ban
 								</a>
@@ -191,7 +191,7 @@
 								<b class="arrow"></b>
 							</li>	
 								<li class="">
-								<a href="http://localhost:81/hrm/dskn">
+								<a href="dskn">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Kĩ năng
 								</a>
@@ -199,7 +199,7 @@
 								<b class="arrow"></b>
 							</li>	
 								<li class="">
-								<a href="http://localhost:81/hrm/dscv">
+								<a href="dscv">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Chức vụ
 								</a>
@@ -222,7 +222,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="http://localhost:81/hrm/dsluong">
+								<a href="dsluong">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Danh sách lương
 								</a>
@@ -230,7 +230,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="http://localhost:81/hrm/dsbh">
+								<a href="dsbh">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Bảo hiểm
 								</a>
@@ -238,7 +238,7 @@
 								<b class="arrow"></b>
 							</li>
 						<li class="">
-								<a href="http://localhost:81/hrm/dspc">
+								<a href="dspc">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Phụ cấp
 								</a>
@@ -337,6 +337,12 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu ace-scroll scroll-disabled" style="">
+							<li class="">
+								<a href="dstk">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Tài khoản
+								</a>
+
 							<li class="">
 								<a href="dsloaitk">
 									<i class="menu-icon fa fa-caret-right"></i>
