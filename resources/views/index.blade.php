@@ -44,9 +44,9 @@
                             <div class="col-xs-12 col-sm-3 center">
                               <span class="profile-picture">
                                  @if($user->ANH_DAI_DIEN != '')
-                           <img id="img" class="editable img-responsive" src="http://localhost:81/hrm/image/user/{{$user->ANH_DAI_DIEN}}" alt="{{$user->ANH_DAI_DIEN}}" width="200" /></center>
+                           <img id="img" class="editable img-responsive" src="image/user/{{$user->ANH_DAI_DIEN}}" alt="{{$user->ANH_DAI_DIEN}}" width="200" /></center>
                               @else
-                           <center><img class="editable img-responsive" src="http://localhost:81/hrm/hrm/public/image/user/noimage.png"  width="200"/>
+                           <center><img class="editable img-responsive" src="image/user/noimage.png"  width="200"/>
                              @endif
                               </span>
 
