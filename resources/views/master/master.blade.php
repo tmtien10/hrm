@@ -1,9 +1,10 @@
 <html lang="en">
 <head>
+		<base href="{{asset('')}}">
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta charset="utf-8">
 		<title>Bảng điều khiển</title>
-		<base href="{{asset('')}}">
 		<meta name="description" content="Common form elements and layouts">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		@yield('script')
@@ -132,7 +133,7 @@
 				
 				<ul class="nav nav-list" style="top: 0px;">
 					<li >
-						<a href="index">
+						<a href="http://localhost:81/hrm/index">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Thông tin tài khoản </span>
 						</a>
@@ -183,7 +184,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="dsbc">
+								<a href="http://localhost:81/hrm/dsbc">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Bằng cấp
 								</a>

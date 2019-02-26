@@ -1,6 +1,6 @@
 <html lang="en"><head>
-    <base href="{{asset('')">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <base href="{{asset('')}}">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>List</title>
 
@@ -92,7 +92,7 @@
                 <li class="divider"></li>
 
                 <li>
-                  <a href="logout">
+                  <a href="http://localhost:81/hrm/logout">
                     <i class="ace-icon fa fa-power-off"></i>
                     Logout
                   </a>
@@ -327,9 +327,6 @@
                   <i class="menu-icon fa fa-caret-right"></i>
                   Tài khoản
                 </a>
-
-                
-            </li>
               <li class="">
                 <a href="dsloaitk">
                   <i class="menu-icon fa fa-caret-right"></i>

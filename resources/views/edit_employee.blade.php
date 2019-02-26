@@ -1,5 +1,6 @@
 @extends('master.master')
 @section('script')
+<base href="{{asset('')}}">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script type="text/javascript" src="{!! asset('js/jquery-3.0.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
