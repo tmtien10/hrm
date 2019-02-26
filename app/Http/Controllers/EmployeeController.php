@@ -192,7 +192,7 @@ class EmployeeController extends Controller
     }
         
          return "<script>alert('Thêm mới thành công');
-                window.location.href='http://localhost:81/hrm/dsnv';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsnv';</script>";
 
 
     }
@@ -384,7 +384,7 @@ class EmployeeController extends Controller
         }
     }
       return "<script>alert('Update thành công');
-                window.location.href='http://localhost:81/hrm/dsnv';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsnv';</script>";
 
 
 
@@ -395,7 +395,7 @@ class EmployeeController extends Controller
       DB::delete('delete from nhan_vien where ID_NV = ?',[$ID_NV]);
 
       return "<script>alert('Đã xóa nhân viên');
-                window.location.href='http://localhost:81/hrm/dsnv';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsnv';</script>";
 
 
    }
@@ -459,7 +459,7 @@ public function them_khen_thuong(Request $request){
     );
         DB::table('khen_thuong')->insert($insertarr);
         return "<script>alert('Đã thêm');
-                window.location.href='http://localhost:81/hrm/dskhenthuong';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dskhenthuong';</script>";
 }
 public function view_khen_thuong($MA){
 
@@ -514,7 +514,7 @@ public function edit_khen_thuong(Request $request){
 
         DB::table('khen_thuong')->where('MA_QD_KT',$ma)->delete();
         return "<script>alert('Đã xóa');
-                window.location.href='http://localhost:81/hrm/dskhenthuong';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dskhenthuong';</script>";
     }
   public function get_list_ki_luat(){
     $kl=DB::table('ki_luat')->get();
@@ -566,7 +566,7 @@ public function them_ki_luat(Request $request){
     );
         DB::table('ki_luat')->insert($insertarr);
         return "<script>alert('Đã thêm');
-                window.location.href='http://localhost:81/hrm/dskiluat';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dskiluat';</script>";
 }
 public function view_ki_luat($MA){
 
@@ -619,13 +619,13 @@ public function edit_ki_luat(Request $request){
     );
         DB::table('ki_luat')->where('MA_KL',$MA)->update($updatearr);
         return "<script>alert('Đã thêm');
-                window.location.href='http://localhost:81/hrm/dskiluat';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dskiluat';</script>";
 }
  public function del_ki_luat($ma){
 
         DB::table('ki_luat')->where('MA_KL',$ma)->delete();
         return "<script>alert('Đã xóa');
-                window.location.href='http://localhost:81/hrm/dskiluat';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dskiluat';</script>";
     }
 
     public function addposition(Request $request){
@@ -636,7 +636,7 @@ public function edit_ki_luat(Request $request){
 
         DB::table('qua_trinh_cong_tac')->insert(['ID_NV'=>$id,'MA_CV'=>$chuc_vu,'THOI_GIAN_BAT_DAU_LV'=>$ngay_bat_dau,'THOI_GIAN_KET_THUC_LV'=>$ngay_ket_thuc]);
          return "<script>alert('Thêm mới thành công');
-                window.location.href='http://localhost:81/hrm/editnv/{$id}';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/editnv/{$id}';</script>";
 
     }
     public function editposition(Request $request){
@@ -647,14 +647,14 @@ public function edit_ki_luat(Request $request){
 
         DB::table('qua_trinh_cong_tac')->where('MA_CV',$chuc_vu)->where('ID_NV',$id)->update(['THOI_GIAN_BAT_DAU_LV'=>$ngay_bat_dau,'THOI_GIAN_KET_THUC_LV'=>$ngay_ket_thuc]);
          return "<script>alert('Sửa thành công');
-                window.location.href='http://localhost:81/hrm/editnv/{$id}';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/editnv/{$id}';</script>";
 
     }
     public function destroycv($id,$ma){
 
         DB::table('qua_trinh_cong_tac')->where('MA_CV',$ma)->where('ID_NV',$id)->delete();
          return "<script>alert('Xóathành công');
-                window.location.href='http://localhost:81/hrm/editnv/{$id}';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/editnv/{$id}';</script>";
     }
 
 

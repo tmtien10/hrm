@@ -85,17 +85,7 @@
                                     <span>{{$pb->TEN_PB}}</span>
                                     
                                   </div>
-                                </div>
-
-
-                                <div class="profile-info-row">
-                                  <div class="profile-info-name">Ngày tham gia</div>
-
-                                  <div class="profile-info-value">
-                                    <span>{{$user->created_at}}</span>
-                                  </div>
-                                </div>
-
+                                </div>                          
                                 <div class="profile-info-row">
                                   <?php 
                                         date_default_timezone_set('Asia/Bangkok')

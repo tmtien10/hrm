@@ -72,10 +72,10 @@ class AccController extends Controller
 				if($cv==null){
 				DB::table('loai_tai_khoan')->where('MA_LOAI_TK','=',$MA_CV)->delete();
 				return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dsloaitk';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsloaitk';</script>";
             }
             else return "<script>alert('Cannot delete');
-            		 window.location.href='http://localhost:81/hrm/dsloaitk';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dsloaitk';</script>";
             
             
 			}
@@ -118,13 +118,13 @@ class AccController extends Controller
       $loai_tk=$request->input('loaitk_edit');
     DB::table('tai_khoan')->where('username',$username)->update(['MA_LOAI_TK'=>$loai_tk]);
         return "<script>alert('Update');
-                window.location.href='http://localhost:81/hrm/dstk';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dstk';</script>";
       }
 
    public function Delete_Acc($username){
       
     DB::table('tai_khoan')->where('username',$username)->delete();
         return "<script>alert('Delete');
-                window.location.href='http://localhost:81/hrm/dstk';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dstk';</script>";
       }
 }

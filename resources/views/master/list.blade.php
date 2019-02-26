@@ -56,7 +56,7 @@
         </button>
 
         <div class="navbar-header pull-left">
-          <a href="index.html" class="navbar-brand">
+          <a href="index" class="navbar-brand">
             <small>
               <i class="fa fa-leaf"></i>
              QUẢN LÍ NHÂN SỰ
@@ -92,7 +92,7 @@
                 <li class="divider"></li>
 
                 <li>
-                  <a href="http://localhost:81/hrm/logout">
+                  <a href="logout">
                     <i class="ace-icon fa fa-power-off"></i>
                     Logout
                   </a>
@@ -117,7 +117,7 @@
         
         <ul class="nav nav-list" style="top: 0px;">
           <li>
-            <a href="http://localhost:81/hrm/index">
+            <a href="index">
               <i class="menu-icon fa fa-tachometer"></i>
               <span class="menu-text"> Thông tin tài khoản </span>
             </a>

@@ -118,7 +118,7 @@ class HopdongController extends Controller
         DB::table('nhan_vien')->where('ID_NV',$ID_NV)->update(['LUONG_CO_BAN'=>$MUC_LUONG,'MA_PB'=>$MA_PB]);
         DB::table('qua_trinh_cong_tac')->insert(['ID_NV'=>$ID_NV,'MA_CV'=>$VI_TRI_CONG_VIEC,'THOI_GIAN_BAT_DAU_LV'=>$THOI_GIAN_BAT_DAU]);
          return "<script>alert('Thêm mới thành công');
-                window.location.href='http://localhost:81/hrm/dshopdong';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dshopdong';</script>";
 
             }
     
@@ -232,7 +232,7 @@ class HopdongController extends Controller
         DB::table('nhan_vien')->where('ID_NV',$ID_NV)->update(['LUONG_CO_BAN'=>$MUC_LUONG,'MA_PB'=>$MA_PB]);
          DB::table('qua_trinh_cong_tac')->insert(['ID_NV'=>$ID_NV,'MA_CV'=>$VI_TRI_CONG_VIEC,'THOI_GIAN_BAT_DAU_LV'=>$THOI_GIAN_BAT_DAU]);
           return "<script>alert('Sửa thành công');
-                window.location.href='http://localhost:81/hrm/dshopdong';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dshopdong';</script>";
             
             }
     
@@ -242,7 +242,7 @@ public function destroy($STT) {
     
 
       return "<script>alert('Đã xóa');
-                window.location.href='http://localhost:81/hrm/dshopdong';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dshopdong';</script>";
 
 
    }

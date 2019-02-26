@@ -84,10 +84,10 @@ class HomeController extends Controller
 				if($dep==null){
 				DB::table('phong_ban')->where('MA_PB','=',$MA_PB)->delete();
 				return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dspb';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dspb';</script>";
                 	}
                 else return "<script>alert('Cannot delete');
-            		 window.location.href='http://localhost:81/hrm/dspb';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dspb';</script>";
             
 			}
 
@@ -146,10 +146,10 @@ class HomeController extends Controller
 				if($cv==null){
 				DB::table('chuc_vu')->where('MA_CV','=',$MA_CV)->delete();
 				return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dscv';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dscv';</script>";
             }
             else return "<script>alert('Cannot delete');
-            		 window.location.href='http://localhost:81/hrm/dscv';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dscv';</script>";
             
             
 			}
@@ -181,7 +181,7 @@ class HomeController extends Controller
     		DB::table('bang_cap')->insert(['TEN_BC'=>$TEN_BC]);
 
     		return "<script>alert('Added');
-            		 window.location.href='http://localhost:81/hrm/dsbc';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dsbc';</script>";
     	}
 			}
     	public function Delete_Qualification($MA_BC){
@@ -189,10 +189,10 @@ class HomeController extends Controller
 				if($cv==null){
 				DB::table('bang_cap')->where('MA_BC','=',$MA_BC)->delete();
 				return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dsbc';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsbc';</script>";
             }
             else return "<script>alert('Cannot delete');
-            		 window.location.href='http://localhost:81/hrm/dsbc';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dsbc';</script>";
             
             
 			}
@@ -223,7 +223,7 @@ class HomeController extends Controller
     		DB::table('ki_nang')->insert(['TEN_KN'=>$TEN_KN]);
 
     		return "<script>alert('Added');
-            		 window.location.href='http://localhost:81/hrm/dskn';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dskn';</script>";
     	}
 			}
     	public function Delete_Skill($MA_KN){
@@ -231,10 +231,10 @@ class HomeController extends Controller
 				if($cv==null){
 				DB::table('ki_nang')->where('MA_KN','=',$MA_KN)->delete();
 				return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dskn';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dskn';</script>";
             }
             else return "<script>alert('Cannot delete');
-            		 window.location.href='http://localhost:81/hrm/dskn';</script>";
+            		 window.location.href='https://hrmappns.herokuapp.com/dskn';</script>";
             
             
 			}
@@ -300,7 +300,7 @@ class HomeController extends Controller
                 
                 DB::table('phu_cap')->where('MA_PHU_CAP','=',$MA_KN)->delete();
                 return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dspc';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dspc';</script>";
             }
         public function getList_Deductions(){
 
@@ -368,7 +368,7 @@ class HomeController extends Controller
                 
                 DB::table('bao_hiem')->where('MA_GIAM_TRU','=',$MA_KN)->delete();
                 return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dsgt';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsgt';</script>";
             }
         public function getList_PayRate(){
 
@@ -430,10 +430,10 @@ class HomeController extends Controller
                 if($check==null){
                 DB::table('he_so_luong')->where('MA_HE_SO','=',$MA_KN)->delete();
                 return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dshs';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dshs';</script>";
             }
             else  return "<script>alert('Cannot delete');
-                window.location.href='http://localhost:81/hrm/dshs';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dshs';</script>";
             }
         public function getList_categorieslabour(){
 
@@ -494,7 +494,7 @@ class HomeController extends Controller
                 if($check==null){
                 DB::table('loai_hop_dong')->where('MA_LOAI_HD','=',$MA_KN)->delete();
                 return "<script>alert('Deleted');
-                window.location.href='http://localhost:81/hrm/dslhd';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dslhd';</script>";
             }
         }
 		}

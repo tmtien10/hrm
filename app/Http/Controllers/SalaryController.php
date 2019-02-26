@@ -199,7 +199,7 @@ class SalaryController extends Controller
     public function del_payslip($STT){
     DB::table('luong')->where('STT',$STT)->delete();
     return "<script>alert('Delete');
-                window.location.href='http://localhost:81/hrm/dsluong';</script>";
+                window.location.href='https://hrmappns.herokuapp.com/dsluong';</script>";
    } 
    public function get_payslip($STT){
    	$THONG_TIN_PHIEU=DB::table('luong')->where('STT',$STT)->get();

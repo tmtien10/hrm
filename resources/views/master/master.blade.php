@@ -65,7 +65,7 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="index.html" class="navbar-brand">
+					<a href="index" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
 							QUẢN LÍ NHÂN SỰ
@@ -133,7 +133,7 @@
 				
 				<ul class="nav nav-list" style="top: 0px;">
 					<li >
-						<a href="http://localhost:81/hrm/index">
+						<a href="index">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Thông tin tài khoản </span>
 						</a>
@@ -184,7 +184,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="http://localhost:81/hrm/dsbc">
+								<a href="dsbc">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Bằng cấp
 								</a>
