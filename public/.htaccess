@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
+        php_value max_execution_time 180
     </IfModule>
 
     RewriteEngine On
@@ -19,4 +20,4 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
-php_value max_execution_time 180;
+
